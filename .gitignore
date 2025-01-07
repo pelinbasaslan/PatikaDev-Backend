@@ -1,0 +1,74 @@
+# Windows sistemleri için
+Thumbs.db
+Desktop.ini
+
+# MacOS sistemleri için
+.DS_Store
+
+# Linux sistemleri için
+*~
+
+# .NET / Visual Studio projeleri için
+bin/
+obj/
+.vs/
+.vscode/
+.idea/
+
+# Node.js projeleri için
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Python projeleri için
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+env/
+venv/
+
+# Java projeleri için
+*.class
+*.jar
+*.war
+*.ear
+target/
+
+# IntelliJ IDEA ve JetBrains IDE'leri için
+.idea/
+*.iml
+
+# Eclipse IDE için
+.classpath
+.project
+.settings/
+
+# Log dosyaları
+*.log
+
+# IDE konfigürasyon dosyaları
+*.swp
+*.swo
+*.bak
+
+# Paket yöneticileri
+yarn.lock
+package-lock.json
+
+# Diğer sistem dosyaları
+.vscode/
+.idea/
+
+# Git dizini
+.git/
+
+# Bazı derleme dosyaları
+*.out
+*.a
+*.o
+*.so
+
+# Geçici dosyalar
+*.tmp
+*.swp
