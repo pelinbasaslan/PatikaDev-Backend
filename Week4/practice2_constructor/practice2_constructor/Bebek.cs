@@ -22,7 +22,7 @@ public class Bebek
 
     public void BebekKendiniTanitiyor()
     {
-        Console.WriteLine($"Selamlar. Ben bebek {Name} {Surname}. Sen bebek nesnesini newlediğin anda doğdum ve bu tarih :{BirthDay}");
+        Console.WriteLine($"Selamlar. Benim adım: {Name} Soyadım: {Surname}. Sen bebek nesnesini newlediğin anda doğdum ve bu tarih :{BirthDay}");
     }
 
 }
