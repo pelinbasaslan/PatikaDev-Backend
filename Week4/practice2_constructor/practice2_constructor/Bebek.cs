@@ -17,7 +17,7 @@ public class Bebek
         Name = name;
         Surname = surname;
         Console.WriteLine("Ingaaa");
-        BirthDay = DateTime.Now;
+        BirthDay = DateTime.MinValue;
     }
 
     public void BebekKendiniTanitiyor()
