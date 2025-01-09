@@ -2,7 +2,7 @@
 Console.WriteLine("Karenin alanı: " + kare.AlanHesapla());
 
 Kare kare2 = new Kare(5);
-Console.WriteLine("Kare 2nin alanı: " + kare2.AlanHesapla()); //Burada inheritancedan metodu ya da değişkenleri çağırıyor.
+Console.WriteLine("Kare2nin alanı: " + kare2.AlanHesapla()); //Burada inheritancedan metodu ya da değişkenleri çağırıyor.
 
 BaseGeometrikSekil dikdortgen = new Dikdortgen();//Polimorfis örneği. 
 dikdortgen.Yukseklik = 2;

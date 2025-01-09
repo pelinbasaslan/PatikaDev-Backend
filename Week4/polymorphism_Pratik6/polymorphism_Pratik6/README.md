@@ -1,5 +1,4 @@
 
-```markdown
 # Geometrical Shapes Area Calculation (Polymorphism Example)
 
 ## Overview

@@ -5,7 +5,7 @@ public class BaseGeometrikSekil
 
     public virtual int AlanHesapla()
     {
-        int alan= Genislik * Yukseklik;
+        int alan = Genislik * Yukseklik;
         return alan;
     }
 }
@@ -19,7 +19,7 @@ public class Kare : BaseGeometrikSekil
     }
 }
 
-public class Dikdortgen : BaseGeometrikSekil{}
+public class Dikdortgen : BaseGeometrikSekil { }
 
 public class Ucgen : BaseGeometrikSekil
 {
