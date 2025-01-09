@@ -83,17 +83,12 @@ public class Araba
 ### **Example Usage**
 
 ```csharp
-// Creating an Araba object using the default constructor
-Araba araba1 = new Araba();
-Console.WriteLine($"Car1 - Door Count: {car1.DoorCount}");  
-
-// Creating an Araba object with parameters
-Araba araba2 = new Araba("Toyota", "Corolla", "Red", 4);
-Console.WriteLine($"Car2 - Marka: {araba2.Marka}, Kapı Sayısı: {araba2.KapiSayisi}");  
-
-// Attempting to assign an invalid door count (will trigger warning)
-Car car3 = new Car("Honda", "Civic", "Blue", 3);  // Invalid door count
-Console.WriteLine($"Car3 - Door Count: {car3.DoorCount}");  // Door Count: -1 (Invalid)
+Araba araba = new Araba();
+araba.Marka = "Marka1";
+araba.Model = "Model1";
+araba.KapiSayisi = 3;
+araba.Renk = "kırmızı";
+Araba araba3 = new Araba("Model3", "Marka3", "bordo", 3);
 ```
 
 ### **Encapsulation Explanation**
