@@ -23,7 +23,7 @@ public class Ogrenci : BaseKisi
 
 public class Ogretmen : BaseKisi
 {
-    public double Wage { get; set; }
+    public decimal Wage { get; set; }
 
     public void DisplayInfoOgretmen()
     {
