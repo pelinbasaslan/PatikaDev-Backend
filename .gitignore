@@ -74,10 +74,13 @@ package-lock.json
 *.swp
 
 # Derste alınan notlar
-/live1
-/live2
-/RPG
-/ZindanMaceracisi
+Week4/live1/
+Week4/live2/
+Week4/RPG/
+Week4/ZindanMaceracisi/
+Week5/LiveThu/
+Week5/LiveTue/
+Week5/GenericList/
 
 
 
