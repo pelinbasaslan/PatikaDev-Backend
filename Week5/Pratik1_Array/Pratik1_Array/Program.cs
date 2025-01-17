@@ -14,14 +14,11 @@ foreach (var item in numbers)
 Console.WriteLine("------------------");
 
 //3 - Bu diziye kullanıcıdan alınan yeni bir değeri ekleyiniz (11. eleman olarak)
+int[] numbersNew = new int[11];
+numbers.CopyTo(numbersNew, 0); //0: Bu parametre, kopyalamanın numbersNew dizisinin 0. indeksinden başlamasını sağlıyor.
 Console.Write("Bir sayı giriniz:");
 int userNumber = Convert.ToInt32(Console.ReadLine());
-int[] numbersNew = new int[11];
-for (int i = 0; i < numbersNew.Length - 1; i++)
-{
-    numbersNew[i] = i;
-}
-numbersNew[numbersNew.Length - 1] = userNumber;
+numbersNew[10] = userNumber;
 
 foreach (var item in numbersNew)
 {
@@ -30,12 +27,6 @@ foreach (var item in numbersNew)
 Console.WriteLine("------------------");
 
 /*
-Yeni Array oluşturmak yerine: COPY
-numbers dizisinin tüm elemanlarını extendedNumbers dizisinin 0. indeksine kopyala.
-int[] numbersNew = new int[11];
-numbers.CopyTo(numbersNew, 0); //0: Bu parametre, kopyalamanın extendedNumbers dizisinin 0. indeksinden başlamasını sağlıyor.
-numbersNew[10] = userNumber;
-
 public void CopyTo(Array array, int arrayIndex);
 public void CopyTo(int index, Array array, int arrayIndex, int length);
 
@@ -47,7 +38,6 @@ public void CopyTo(int index, Array array, int arrayIndex, int length);
 int[] numbersNew= new int[11];
 numbers.CoppyTo(0,numbersNew,0,10);
 numbersNew[numbersNew.Length-1] = userNumber;
-
 */
 
 //4 - Bu diziyi büyükten küçüğe ekrana yazdırınız.
