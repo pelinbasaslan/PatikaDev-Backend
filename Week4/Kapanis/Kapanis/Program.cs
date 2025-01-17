@@ -1,4 +1,93 @@
-﻿bool continueProgram = true;
+﻿List<Computer> computers = new List<Computer>();
+List<Telephone> telephones = new List<Telephone>();
+
+while (true)
+{
+baslangıc: Console.WriteLine("Telefon üretmek için 1'e bilgisayar üretmek için 2'ye basmanız gerekiyor.");
+    int userInput = Convert.ToInt32(Console.ReadLine());
+    if (userInput == 1)
+    {
+        Computer computer = new Computer();
+        Console.Write("Bilgisayar Adı:");
+        computer.Name = Console.ReadLine();
+    soru2: Console.WriteLine("Bluetooth desteği var mı?E/H");
+        char answerBluetooth = Convert.ToChar(Console.ReadLine());
+        if (answerBluetooth == 'e')
+        {
+            computer.Bluetooth = true;
+        }
+        else if (answerBluetooth == 'h')
+        {
+            computer.Bluetooth = false;
+        }
+        else
+        {
+            Console.WriteLine("Yanlış girdi. Tekrar deneyiniz.");
+            goto soru2;
+        }
+        Console.WriteLine("USB Giriş Sayısı:");
+        computer.UsbPortCount = int.Parse(Console.ReadLine());
+        computers.Add(computer);
+    }
+    else if (userInput == 2)
+    {
+        Telephone telephone = new Telephone(); //Metamorfis
+        Console.Write("Telefon Adı:");
+        telephone.Name = Console.ReadLine();
+    soru: Console.Write("Telefon TR Lisanslı mı?(e/h):");
+        char answer = Convert.ToChar(Console.ReadLine());
+        if (answer == 'e')
+            telephone.TRLisans = true;
+        else if (answer == 'h')
+            telephone.TRLisans = false;
+        else
+        {
+            Console.WriteLine("Yanlış girdi. Lütfen yeniden giriniz.");
+            goto soru;
+        }
+        telephones.Add(telephone);
+    }
+    else
+    {
+        Console.WriteLine("Yanlış bir girdi.");
+        goto baslangıc;
+    }
+
+    Console.WriteLine("Yeniden ekleme işlemi yapmak istiyor musunu? (e/h)");
+    char continueProgram = Convert.ToChar(Console.ReadLine());
+    if (continueProgram == 'h')
+        break;
+
+}
+
+Console.WriteLine("------Bilgisayarlar-------");
+foreach (var computer in computers)
+{
+    computer.PrintInfo();
+    Console.WriteLine("----");
+}
+
+Console.WriteLine("-----Telefonlar-----");
+foreach (var telephone in telephones)
+{
+    telephone.PrintInfo();
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+bool continueProgram = true;
 
 while (continueProgram)
 {
@@ -65,7 +154,7 @@ while (continueProgram)
         else
             computer.Bluetooth = false;
         Console.WriteLine("USB giriş sayısı:");
-        computer.USBPortCount = Convert.ToInt32(Console.ReadLine());
+        computer.UsbPortCount = Convert.ToInt32(Console.ReadLine());
         computer.PrintInfo();
 
         Console.WriteLine("Ürün başarıyla oluşturuldu. Başa dönmek ister misin?(E/H)");
@@ -78,3 +167,4 @@ while (continueProgram)
     }
 
 }
+*/

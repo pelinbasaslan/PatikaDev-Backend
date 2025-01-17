@@ -72,3 +72,12 @@ package-lock.json
 # Geçici dosyalar
 *.tmp
 *.swp
+
+# Derste alınan notlar
+/live1
+/live2
+/RPG
+/ZindanMaceracisi
+
+
+

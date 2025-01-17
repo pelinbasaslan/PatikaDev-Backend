@@ -1,32 +1,33 @@
 public class Computer : BaseMachine //BaseMachineden inherit.
 {
-    private int _USBPortCount; //Field tanımladım. Kapsülleme yapmak için
-    public int USBPortCount
+    private int _usbPortCount; //Field tanımladım. Kapsülleme yapmak için
+    public int UsbPortCount
     {
         get
         {
-            return _USBPortCount;
+            return _usbPortCount;
         }
         set
         {
             if (value == 2 || value == 4)
             {
-                _USBPortCount = value;
+                _usbPortCount = value;
             }
             else
             {
-                Console.WriteLine("USB giriş sayısı 2 veya 4 olmadığı için -1 olarak geri dönüş olacak.");
-                _USBPortCount = -1;
+                //Console.WriteLine("USB giriş sayısı 2 veya 4 olmadığı için -1 olarak geri dönüş olacak.");
+                _usbPortCount = -1;
             }
         }
     }
 
+    /*
     private bool _bluetooth;
     public bool Bluetooth
     {
-        get 
-        { 
-            return _bluetooth; 
+        get
+        {
+            return _bluetooth;
         }
 
         set
@@ -36,13 +37,17 @@ public class Computer : BaseMachine //BaseMachineden inherit.
                 Console.WriteLine("Bluetooth var.");
             else
                 Console.WriteLine("Bluetooth yok.");
-            
+
         }
     }
+    */
+
+    public bool Bluetooth { get; set; }
 
     public override void PrintInfo()
     {
-        Console.WriteLine($"USB giriş sayısı: {USBPortCount}, Bluetooth girişi: {Bluetooth}, Üretim tarihi: {ProductionDate}, Seri numarası: {SerialNumber}, İsmi: {Name}, Açıklaması: {Info}, İşletim Sistemi: {OperationSystem}.");
+        //Console.WriteLine(Bluetooth? "Bluetooth var":"Bluetooth yok."); Bunu $"" ifadesi içinde kullanıyorsak paranteze almak gerekiyor. 
+        Console.WriteLine($"USB giriş sayısı: {UsbPortCount}, Bluetooth var mı?: {(Bluetooth ? "Bluetooh var" : "Bluetooth yok.")}, Üretim tarihi: {ProductionDate}, Seri numarası: {SerialNumber}, İsmi: {Name}, Açıklaması: {Info}, İşletim Sistemi: {OperationSystem}.");
     }
 
 

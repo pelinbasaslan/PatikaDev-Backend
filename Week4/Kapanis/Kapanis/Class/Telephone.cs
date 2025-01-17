@@ -1,5 +1,6 @@
 public class Telephone : BaseMachine //BaseMachineden inherit.
 {
+    /*
     private bool _TRLisansli;
 
     public bool TRLisans
@@ -23,10 +24,13 @@ public class Telephone : BaseMachine //BaseMachineden inherit.
 
         }
     }
+    */
+
+    public bool TRLisans { get; set; }
 
     public override void PrintInfo()
     {
-        Console.WriteLine($"Türkiye Lisanslı: {TRLisans}, Üretim tarihi: {ProductionDate}, Seri numarası: {SerialNumber}, İsmi: {Name}, Açıklaması: {Info}, İşletim Sistemi: {OperationSystem}.");
+        Console.WriteLine($"Türkiye Lisanslı: {(TRLisans ? "Lisanlı" : "Lisanssız")}, Üretim tarihi: {ProductionDate}, Seri numarası: {SerialNumber}, İsmi: {Name}, Açıklaması: {Info}, İşletim Sistemi: {OperationSystem}.");
     }
 
     public override void PrintTheNameOfProduct() //abstractı override ettik.
