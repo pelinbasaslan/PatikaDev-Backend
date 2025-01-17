@@ -10,7 +10,7 @@ while (true)
     Console.Write("Film Adı:");
     movies.Name = Console.ReadLine();
     Console.Write(movies.Name + " adlı filmin Imdb Puanı:");
-    movies.ImdbScore = Convert.ToDouble(Console.ReadLine());
+    movies.ImdbRating = Convert.ToDouble(Console.ReadLine());
 
     moviesList.Add(movies);
 
@@ -35,9 +35,13 @@ Console.WriteLine("---------------------");
 Console.WriteLine("Imdb puanı 4 ile 9 arasında olan bütün filmler:");
 foreach (var item in moviesList)
 {
-    if (item.ImdbScore >= 4 && item.ImdbScore <= 9)
+    if (item.ImdbRating >= 4 && item.ImdbRating <= 9)
     {
-        Console.WriteLine(item.Name + " isimli filmin Imdb puanı: " + item.ImdbScore);
+        Console.WriteLine(item.Name + " isimli filmin Imdb puanı: " + item.ImdbRating);
+    }
+    else
+    {
+        Console.WriteLine("Imdb puanı 4 ile 9 arasında film yok.");
     }
 }
 Console.WriteLine("---------------------");
@@ -46,13 +50,15 @@ Console.WriteLine("---------------------");
 Console.WriteLine("İsmi 'A' ile başlayan filmler:");
 foreach (var item in moviesList)
 {
-    if (true)
+    if (item.Name.Substring(0, 1).ToUpper() == "A")
     {
-        if (item.Name.Substring(0, 1).ToUpper() == "A")
-        {
-            Console.WriteLine(item.Name);
-        }
+        Console.WriteLine(item.Name);
     }
+    else
+    {
+        Console.WriteLine("İsmi 'A' ile başlayan film yok.");
+    }
+
 }
 Console.WriteLine("---------------------");
 
