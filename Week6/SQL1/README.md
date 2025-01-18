@@ -1,5 +1,4 @@
 
-```markdown
 # PostgreSQL Ödev Projeleri
 
 ## İçerik:
@@ -26,7 +25,7 @@ Bu projede kullanılan veritabanı, **dvdrental** örnek veritabanıdır. Verita
 2. **Film Tablosunda Bulunan Tüm Sütunlardaki Verileri, Film Uzunluğu (length) 60'dan Büyük ve 75'ten Küçük Olan Koşullarla Sıralayın**
    ```sql
    SELECT * FROM film WHERE length > 60 AND length < 75;
-   ```
+   ``` 
 
 3. **Film Tablosunda Bulunan Tüm Sütunlardaki Verileri, Rental Rate 0.99 ve Replacement Cost 12.99 veya 28.99 Olma Koşullarıyla Sıralayın**
    ```sql
