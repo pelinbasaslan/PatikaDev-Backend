@@ -1,4 +1,3 @@
-İşte istediğiniz gibi bir `README.md` dosyası:
 
 ```markdown
 # PostgreSQL Ödev Projeleri
