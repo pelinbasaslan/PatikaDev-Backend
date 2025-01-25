@@ -66,7 +66,7 @@ foreach (var item in belliAraliktakiSayi)
 }
 Console.WriteLine("----------");
 
-//Listedeki her bir sayının karesi (Bunun için yeni bir liste oluşturup yazdırabilirsiniz.)
+//Listedeki her bir sayının karesi 
 List<int> sayilarinKaresi = randomSayilar.Select(x => x * x).ToList();
 for (int i = 0; i < sayilarinKaresi.Count(); i++)
 {
