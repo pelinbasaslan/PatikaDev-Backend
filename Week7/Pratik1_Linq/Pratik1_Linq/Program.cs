@@ -18,7 +18,7 @@ Console.WriteLine("----------");
 
 
 //Çift olan sayılar
-var evenNumbers = randomSayilar.Where(x => x % 2 == 0);
+var evenNumbers = randomSayilar.Where(x => x % 2 == 0).ToList();
 Console.WriteLine("Çift sayılar:");
 foreach (var item in evenNumbers)
 {
@@ -27,7 +27,7 @@ foreach (var item in evenNumbers)
 Console.WriteLine("----------");
 
 //Tek olan sayılar
-var notEvenNumbers = randomSayilar.Where(x => x % 2 != 0);
+var notEvenNumbers = randomSayilar.Where(x => x % 2 != 0).ToList();
 Console.WriteLine("Tek sayılar:");
 foreach (var item in notEvenNumbers)
 {
@@ -36,7 +36,7 @@ foreach (var item in notEvenNumbers)
 Console.WriteLine("----------");
 
 //Negatif sayılar
-var negatifNumbers = randomSayilar.Where(x => x < 0);
+var negatifNumbers = randomSayilar.Where(x => x < 0).ToList();
 Console.WriteLine("Negatif Sayılar:");
 foreach (var item in negatifNumbers)
 {
@@ -45,7 +45,7 @@ foreach (var item in negatifNumbers)
 Console.WriteLine("----------");
 
 //Pozitif Sayılar
-var pozitifNumbers = randomSayilar.Where(x => x > 0);
+var pozitifNumbers = randomSayilar.Where(x => x > 0).ToList();
 Console.WriteLine("Pozitif sayılar:");
 foreach (var item in pozitifNumbers)
 {
@@ -54,7 +54,7 @@ foreach (var item in pozitifNumbers)
 Console.WriteLine("----------");
 
 //15'ten büyük ve 22'den küçük sayılar
-var belliAraliktakiSayi = randomSayilar.Where(x => x > 15 && x < 22);
+var belliAraliktakiSayi = randomSayilar.Where(x => x > 15 && x < 22).ToList();
 Console.WriteLine("15'ten büyük ve 22'den küçük sayılar");
 if (belliAraliktakiSayi.Count()==0)
 {
