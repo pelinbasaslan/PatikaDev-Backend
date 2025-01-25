@@ -18,7 +18,7 @@ Console.WriteLine("----------");
 
 
 //Çift olan sayılar
-var evenNumbers = randomSayilar.Where(x => x % 2 == 0).ToList();
+var evenNumbers = randomSayilar.Where(x => x % 2 == 0).ToList(); //Sonrasında ihtiyacım yoksa ToList yapmama gerek yok. 
 Console.WriteLine("Çift sayılar:");
 foreach (var item in evenNumbers)
 {
@@ -68,7 +68,7 @@ Console.WriteLine("----------");
 
 //Listedeki her bir sayının karesi 
 List<int> sayilarinKaresi = randomSayilar.Select(x => x * x).ToList();
-for (int i = 0; i < sayilarinKaresi.Count(); i++)
+for (int i = 0; i < sayilarinKaresi.Count; i++)
 {
     Console.WriteLine(randomSayilar[i]+"sayısının karesi: "+ sayilarinKaresi[i]);
 }
