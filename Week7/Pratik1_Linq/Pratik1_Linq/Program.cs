@@ -2,11 +2,10 @@
 using System.Security.Cryptography.X509Certificates;
 
 List<int> randomSayilar = new List<int>();
-
+Random random = new Random();
 for (int i = 0; i < 10; i++)
 {
-    Random random = new Random();
-    randomSayilar.Add(random.Next(-100,100));
+    randomSayilar.Add(random.Next(-100, 100));
 }
 
 Console.WriteLine("Sayılar:");
@@ -56,7 +55,7 @@ Console.WriteLine("----------");
 //15'ten büyük ve 22'den küçük sayılar
 var belliAraliktakiSayi = randomSayilar.Where(x => x > 15 && x < 22).ToList();
 Console.WriteLine("15'ten büyük ve 22'den küçük sayılar");
-if (belliAraliktakiSayi.Count()==0)
+if (belliAraliktakiSayi.Count() == 0)
 {
     Console.WriteLine("15'ten büyük ve 22'den küçük bir sayı yok.");
 }
@@ -70,5 +69,5 @@ Console.WriteLine("----------");
 List<int> sayilarinKaresi = randomSayilar.Select(x => x * x).ToList();
 for (int i = 0; i < sayilarinKaresi.Count; i++)
 {
-    Console.WriteLine(randomSayilar[i]+"sayısının karesi: "+ sayilarinKaresi[i]);
+    Console.WriteLine(randomSayilar[i] + "sayısının karesi: " + sayilarinKaresi[i]);
 }
