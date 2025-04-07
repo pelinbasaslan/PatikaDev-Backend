@@ -1,0 +1,6 @@
+@Pratik1_JWT_HostAddress = http://localhost:5221
+
+GET {{Pratik1_JWT_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
