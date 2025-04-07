@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SurvivorWebApiEF", "SurvivorWebApiEF\SurvivorWebApiEF.csproj", "{24C114FB-6246-46D1-AF04-503A1D91E3CE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{24C114FB-6246-46D1-AF04-503A1D91E3CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24C114FB-6246-46D1-AF04-503A1D91E3CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24C114FB-6246-46D1-AF04-503A1D91E3CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24C114FB-6246-46D1-AF04-503A1D91E3CE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
